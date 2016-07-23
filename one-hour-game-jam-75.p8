@@ -51,8 +51,8 @@ function reset_timer()
 
  timer_start = flr(timer_start * 0.9)
  
- if (timer_start<40) then
-  timer_start = 40
+ if (timer_start<70) then
+  timer_start = 70
  end
  
  timers["main"] = timer_start

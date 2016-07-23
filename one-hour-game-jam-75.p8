@@ -8,7 +8,7 @@ chars = {"‹", "‘", "”", "ƒ"}
 icons = {}
 
 score = 0
-timer_start = 750
+timer_start = 550
 trigger_point = 0
 
 function _init()
@@ -51,8 +51,8 @@ function reset_timer()
 
  timer_start = flr(timer_start * 0.9)
  
- if (timer_start<=150) then
-  timer_start = 150
+ if (timer_start<40) then
+  timer_start = 40
  end
  
  timers["main"] = timer_start
